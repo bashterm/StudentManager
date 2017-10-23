@@ -1,4 +1,8 @@
-
+/*
+By Aidan Sciortino and Linden Burack
+2017
+This class handles holding student data
+*/
 public class Student {
 	private String name; //makes a "name" variable that can't be accesed from outside this class.
 	private int id;//makes an "id" variable that can't be accesed from outside this class.
