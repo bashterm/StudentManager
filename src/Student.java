@@ -18,6 +18,14 @@ public class Student {
 	public void addAbsence (Absence newAbsence) {
 		absences.add(newAbsence);
 	}
-		
+	public int getId () {
+		return id;
+	}
+	public int getTotalAbsences() {
+		return absences.size();
+	}
+	public String getName () {
+		return name;
+	}
 	
 }

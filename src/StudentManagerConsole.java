@@ -21,6 +21,13 @@ public class StudentManagerConsole {
 		if (command.equals("help")) {
 			help();
 		}
+		if (command.equals("add absence")) {
+			addAbsence();
+		
+		}
+		if (command.equals("get absence")) {
+			getAbsence();
+		}
 	}
 	
 	public static void help() {
@@ -30,7 +37,16 @@ public class StudentManagerConsole {
 		
 	}
 	
-	
+	public static void addAbsence() {
+		System.out.print("enter an Id to add an absence to:");
+		int id= scan.nextInt();
+		StudentManager.addAbsence(id);
+	}
+	public static void getAbsence() {
+		System.out.print("enter an Id to add get total absences for:");
+		int id= scan.nextInt();
+		System.out.println(StudentManager.getAbsencesById(id));
+	}
 	
 	public static void makeStudent() {
 		
